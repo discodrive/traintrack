@@ -1,6 +1,9 @@
 <?php
 
 require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/classes/Autoload.php';
+
+spl_autoload_register('Traintrack\Autoload::loader');
 
 /**
  * Register a Silex application
@@ -34,4 +37,3 @@ $lexer = new Twig_Lexer($app['twig'], [
 $app['twig']->setLexer($lexer);
 
 require __DIR__ . '/routes.php';
-require __DIR__ . '/database.php';
