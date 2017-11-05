@@ -1,13 +1,6 @@
 <?php
 
 require '../database.php';
-require_once '../generated-conf/config.php';
-
-Propel::init();
-
-$exercise = new Exercise;
-
-var_dump($exercise);
 
 // require '../classes/Insert.php';
 
