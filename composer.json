@@ -1,0 +1,21 @@
+{
+    "name": "leeaplin/traintrack",
+    "description": "GZLC Workout Tracker",
+    "type": "project",
+    "require": {
+        "silex/silex": "^2.2",
+        "phpunit/phpunit": "^6.3",
+        "semantic/ui": "^2.2",
+        "twig/twig": "^2.4",
+        "propel/propel": "~2.0@dev"
+    },
+    "authors": [
+        {
+            "name": "Lee",
+            "email": "lee.a@substrakt.co.uk"
+        }
+    ],
+     "autoload": { 
+        "classmap": ["generated-classes/",] 
+     }
+}

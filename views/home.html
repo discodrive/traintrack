@@ -1,0 +1,40 @@
+{ include 'includes/header.html' }
+
+<div class="ui text container">
+    <h2>Workout Form</h2>
+
+    <div class="control-group" id="fields">
+        <div class="controls"> 
+            <form action="forms/workout-form.php" method="post" class="ui form">
+                <div class="field">
+                    <label for="workout">Workout</label>
+                    <input type="text" name="workout" id="workout" required="required" placeholder="Workout name"/>
+                </div>
+                <div class="exercises">
+                    <label>Exercises</label>
+                    <div class="entry">
+                        <div class="fields">
+                            <div class="nine wide field">
+                                <input class="form-control" name="exercises[name][]" type="text" placeholder="Exercise name" required />
+                            </div>
+                            <div class="six wide field">
+                                <input class="form-control" name="exercises[type][]" type="text" placeholder="Exercise type" required />
+                            </div>
+                            <div class="one wide field">
+                                <span class="input-group-btn">
+                                    <button class="ui positive icon button btn-success btn-add">
+                                        <i class="plus icon"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <button type="submit" name="submit" class="ui button">Submit</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>
